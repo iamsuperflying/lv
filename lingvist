@@ -6,7 +6,7 @@ var body = $response.body;
 var url = $request.url;
 
 if (body) {
-  let data = JSON.parse($response.body);
+  var data = JSON.parse(body);
   const subscription = {
     status: "intro-trial",
     expiration_ts: "2222-10-18T02:52:03+00:00",
